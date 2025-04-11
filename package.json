@@ -3,10 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://ann-teres.github.io/goit-js-hw-09",
+  "homepage": "https://slendermanyshka.github.io/-goit-js-hw-09/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-js-hw-09/",
+    "build": "vite build --base=/-goit-js-hw-09/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
