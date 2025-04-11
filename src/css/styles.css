@@ -1,18 +1,164 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+html,
+body {
+  height: 100%;
+  margin: 24px auto;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+textarea,
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+input:focus {
+  border-color: #000000;
+}
+
+label {
+  margin-left: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 1128px;
+  margin: 0 auto;
+}
+
+.gallery-link {
+  flex: 0 0 calc(33.33% - 10px);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.simple-lightbox {
+  background-color: rgba(46, 47, 66, 0.8);
+  backdrop-filter: blur(1px);
+}
+
+.sl-counter,
+.sl-prev,
+.sl-close,
+.sl-next {
+  color: white !important;
+}
+
+.feedback-form,
+.form-style {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field {
+  min-height: 80px;
+}
+
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 16px;
+  margin-left: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #6c8cff;
+}
